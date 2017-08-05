@@ -26,4 +26,4 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 
 
 ## Copyright and license
-Released under the <a href="https://github.com/st3f4no/molecule/blob/master/LICENSE">MIT License</a>.
+Released under the [MIT License](https://github.com/st3f4no/molecule/blob/master/LICENSE).
