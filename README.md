@@ -12,7 +12,7 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 
 <!-- Molecule CSS minified -->
-<link rel="stylesheet" href="molecule.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/st3f4no/molecule/molecule.min.css">
 ```
 
 
