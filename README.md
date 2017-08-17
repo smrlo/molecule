@@ -25,5 +25,9 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 - Basic styling for typography and some other elements
 
 
+## Contributing
+Did you find a &#x1f41e; or would like to make a feature request? Please [open a new issue](https://github.com/st3f4no/molecule/issues).
+
+
 ## Copyright and license
 Released under the [MIT License](https://github.com/st3f4no/molecule/blob/master/LICENSE).
