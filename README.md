@@ -1,7 +1,7 @@
 # Molecule
 Molecule is a lightweight and responsive CSS framework, which provides a very flexible solution for easy to set up and fast development.
 
-Explore more on how to get started with Molucule at https://getmolecule.io
+Explore more on how to get started with Molucule at https://st3f4no.github.io/molecule
 
 
 ## Getting Started
