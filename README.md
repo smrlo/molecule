@@ -1,7 +1,7 @@
 # Molecule
 Molecule is a lightweight and responsive CSS framework, which provides a very flexible solution for easy to set up and fast development.
 
-Explore more on how to get started with Molucule at https://st3f4no.github.io/molecule
+Explore more on how to get started with Molucule at https://smrlo.github.io/molecule
 
 
 ## Getting Started
@@ -12,7 +12,7 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 
 <!-- Molecule CSS minified -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/st3f4no/molecule/molecule.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/smrlo/molecule/molecule.min.css">
 ```
 
 
@@ -26,8 +26,8 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 
 
 ## Contributing
-Did you find a &#x1f41e; or would like to make a feature request? Please [open a new issue](https://github.com/st3f4no/molecule/issues).
+Did you find a &#x1f41e; or would like to make a feature request? Please [open a new issue](https://github.com/smrlo/molecule/issues).
 
 
 ## Copyright and license
-Released under the [MIT License](https://github.com/st3f4no/molecule/blob/master/LICENSE).
+Released under the [MIT License](https://github.com/smrlo/molecule/blob/master/LICENSE).
