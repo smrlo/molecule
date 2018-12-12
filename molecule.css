@@ -1,15 +1,15 @@
 /*!
  * Molecule v1.0.2
- * https://getmolecule.io
+ * https://smrlo.github.io/molecule
  *
- * Copyright (c) 2017 https://github.com/st3f4no
+ * Copyright (c) 2017 https://github.com/smrlo
  * Licensed under the MIT license
  */
 
 
 /* GENERAL
 -------------------------------------------------- */
-html { 
+html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -37,7 +37,8 @@ body {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 
@@ -128,7 +129,7 @@ div[class=container-960] div[class=row] div[class^="col-"] {
   padding-left: 10px;
   float: left;
 }
-  
+
 .col-12 { max-width: 100%; }
 .col-11 { max-width: 91.66666667%; }
 .col-10 { max-width: 83.33333333%; }
@@ -308,8 +309,10 @@ select {
   background-color: transparent;
   border: 1px solid #dae0e5;
   border-radius: .25rem;
-  box-shadow: none;
-  box-sizing: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   padding: .5rem .75rem;
   width: 100%;
 }
