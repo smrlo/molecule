@@ -1,7 +1,9 @@
 # Molecule
-Molecule is a lightweight and responsive CSS framework, which provides a very flexible solution for easy to set up and fast development.
+Molecule is a lightweight, responsive and mobile-first CSS framework, which provides a very flexible solution for an easy to set up and fast development.
 
-Explore more on how to get started with Molecule at https://smrlo.github.io/molecule
+Molecules includes 3 responsive and mobile-first flexbox grids (full-width, 1140px and 960px), basic typography, text utilities and some other basic layout elements.
+
+Read more on how to get started with Molecule at https://smrlo.github.io/molecule
 
 
 ## Getting Started
@@ -18,10 +20,10 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 
 ## Features
 - Easy to set up
-- Lightweight and tiny css framework (~6kB)
-- Mobile first approach
+- Lightweight CSS framework
+- Flexbox based grid
+- Mobile-first approach
 - Responsive and flexible grid system: 12 columns, with 1140px, 960px or Full-page width grids
-- Nestable grids
 - Basic styling for typography and some other elements
 
 
