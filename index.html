@@ -1,321 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="robots" content="index, follow" />
-  <!-- Mobile-friendly viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="author" content="https://github.com/smrlo" />
-  <title>Molecule - Tiny, responsive and no-frills CSS framework.</title>
-  <meta name="description" content="Molecule is a lightweight and responsive CSS framework, which provides a very flexible solution for easy to set up and fast development.">
-  <!-- Normalize css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <!-- Grid -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/smrlo/molecule/molecule.min.css">
-  <!--<link rel="stylesheet" href="molecule/molecule.min.css">-->
-  <!-- Website style sheets -->
-  <link rel="stylesheet" href="css/style.min.css">
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
 
-<body onload="PR.prettyPrint()">
+    <!-- Molecule CSS -->
+    <link rel="stylesheet" href="molecule.min.css">
 
-  <div class="container-full"> <!-- Container header -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.min.css">
 
-    <!-- Title -->
-    <div class="row" id="header">
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h1>Molecule</h1>
-        <h2>Tiny, responsive and no-frills CSS framework.</h2>
-        <div class="action"><a href="#gettingstarted" class="button">Get Started</a> <a href="https://github.com/smrlo/molecule" target="_blank" class="button">GitHub</a></div>
+    <title>Molecule - tiny, responsive and no-frills CSS framework.</title>
+  </head>
+  <body>
+    
+    <div class="container-960"> <!-- Container Start -->
+      
+      <!-- HEADER -->
+      <div class="row">
+        <div class="col-12">
+          <div class="space-4"></div>
+          <h1>Molecule</h1>
+          <p>Tiny, responsive and no-frills CSS framework.</p>
+          <div class="space-1"></div>
+          <a href="" class="button">Get Started</a> <a href="https://github.com/smrlo/molecule" target="_blank" class="button">View on GitHub</a>
+          <div class="space-4"></div>
+        </div>
       </div>
-    </div>
-
-  </div> <!-- Container header -->
-
-
-  <div class="container-960"> <!-- Container main -->
-
-    <!-- Menu -->
-    <div class="row">
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#gettingstarted">Getting started</a></li>
-            <li><a href="#grid">Grid</a></li>
-            <li><a href="#typography">Typography</a></li>
-            <li><a href="#elements">Elements</a></li>
-          </ul>
-      </div>
-    </div>
-
-
-    <div class="row"> <!-- Content -->
+    
       <!-- About -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="about">About<a class="anchor" href="#about">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p>Molecule is a lightweight and responsive CSS framework, which provides a very flexible solution for easy to set up and fast development.
-          Molecules includes 3 responsive layout grids, basic typography, text styling and some other basic layout elements.</p>
-      </div>
-
-      <!-- Getting started -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="gettingstarted">Getting started<a class="anchor" href="#gettingstarted">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p>To install Molecule, simply add the <code class="code-label">molecule.min.css</code> file in your website &lt;head&gt;. For more cross-browser consistency of default styling, you can also add <code class="code-label">normalize.min.css</code> before adding molecule.</p>
-        <pre class="prettyprint"><code class="language-html">&lt;!-- CSS Reset --&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css&quot;&gt;<br/><br/>&lt;!-- Molecule CSS minified --&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/smrlo/molecule/molecule.min.css&quot;&gt;</code></pre>
-      </div>
-
-      <!-- Grid -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="grid">Grid<a class="anchor" href="#grid">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p>Molecule includes a 12 columns responsive, mobile first grid system with a default max width of 1140px, wich you can easily change to a 960px or full page width. You can of course also have a mix of different grids on the same page.</p>
-        <div class="demo-grid">
-          <div class="container-960">
-            <div class="row">
-              <div class="col-12 col-s-5 col-m-5 col-l-5 col-x-5"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-4 col-m-4 col-l-4 col-x-4"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-2 col-m-2 col-l-2 col-x-2"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-            </div>
-            <div class="row">
-              <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3"> <span class="thegrid">col</span> </div>
-              <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3"> <span class="thegrid">col</span> </div>
-              <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3"> <span class="thegrid">col</span> </div>
-              <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3"> <span class="thegrid">col</span> </div>
-            </div>
-            <div class="row">
-              <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4"> <span class="thegrid">col</span> </div>
-              <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4"> <span class="thegrid">col</span> </div>
-              <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4"> <span class="thegrid">col</span> </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-              <div class="col-12 col-s-1 col-m-1 col-l-1 col-x-1"> <span class="thegrid">col</span> </div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-12">
+          <h5>About</h5>
         </div>
-        <p>For the standard 1140px grid use the following code:</p>
-        <pre class="prettyprint"><code class="language-html">&lt;!-- default 12 columns - max width 1140px --&gt;<br/>&lt;div class=&quot;container&quot;&gt;<br/><br/>  &lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col-5&quot;&gt;...&lt;/div&gt;<br/>    &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;<br/>    &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br/>    &lt;div class=&quot;col-1&quot;&gt;...&lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>&lt;/div&gt;</code></pre>
-        <p>For the 960px grid use the following code:</p>
-        <pre class="prettyprint"><code class="language-html">&lt;!-- max width 960px --&gt;<br/>&lt;div class=&quot;container-960&quot;&gt;<br/>  ...<br/>&lt;/div&gt;</code></pre>
-        <p>For the full page width grid use the following code:</p>
-        <pre class="prettyprint"><code class="language-html">&lt;!-- full page width --&gt;<br/>&lt;div class=&quot;container-full&quot;&gt;<br/>  ...<br/>&lt;/div&gt;</code></pre>
-        <p>To set up the columns you can use <code class="code-label">col-[1-12]</code>, <code class="code-label">col-s-[1-12]</code>, <code class="code-label">col-m-[1-12]</code>, <code class="code-label">col-l-[1-12]</code> and <code class="code-label">col-x-[1-12]</code>. Below are the media queries and breakpoints in use:</p>
-        <pre class="prettyprint"><code class="language-css">//&nbsp;Extra&nbsp;small&nbsp;devices&nbsp;(portrait&nbsp;phones,&nbsp;less&nbsp;than&nbsp;576px)&nbsp;--&gt;&nbsp;col-[1-12]<br/>//&nbsp;No&nbsp;media&nbsp;query&nbsp;-&nbsp;this&nbsp;is&nbsp;the&nbsp;default&nbsp;<br/><br/>//&nbsp;Small&nbsp;devices&nbsp;(landscape&nbsp;phones,&nbsp;576px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-s-[1-12]<br/>@media&nbsp;(min-width:&nbsp;576px)&nbsp;{&nbsp;...&nbsp;}<br/><br/>//&nbsp;Medium&nbsp;devices&nbsp;(tablets,&nbsp;768px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-m-[1-12]<br/>@media&nbsp;(min-width:&nbsp;768px)&nbsp;{&nbsp;...&nbsp;}<br/><br/>//&nbsp;Large&nbsp;devices&nbsp;(desktops,&nbsp;992px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-l-[1-12]<br/>@media&nbsp;(min-width:&nbsp;992px)&nbsp;{&nbsp;...&nbsp;}<br/><br/>//&nbsp;Extra&nbsp;large&nbsp;devices&nbsp;(large&nbsp;desktops,&nbsp;1200px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-x-[1-12]<br/>@media&nbsp;(min-width:&nbsp;1200px)&nbsp;{&nbsp;...&nbsp;}<br/></code></pre>
+        <div class="col-12 col-s-6 col-m-6 col-l-6 col-x-6">
+          <p>Molecule is a lightweight, responsive and mobile-first CSS framework, which provides a very flexible solution for an easy to set up and fast development.</p>
+        </div>
+        <div class="col-12 col-s-6 col-m-6 col-l-6 col-x-6">
+          <p>Molecules includes 3 responsive and mobile-first flexbox grids (full-width, 1140px and 960px), basic typography, text utilities and some other basic layout elements.</p>
+          <div class="space-2"></div>
+        </div>
       </div>
-
+      
+      <!-- Getting Started -->
+      <div class="row">
+        <div class="col-12">
+          <h5>Getting Started</h5>
+        </div>
+        <div class="col-12">
+          <p>To install Molecule, simply add the <code class="code-demo">molecule.min.css</code> file in your website <code class="code-demo">&lt;head&gt;</code>. For more cross-browser consistency of default styling, you can also add <code class="code-demo">normalize.min.css</code> before adding molecule.</p>
+        </div>
+        <div class="col-12">
+          <pre><code>&lt;!-- CSS Reset --&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css&quot;&gt;<br/><br/>&lt;!-- Molecule CSS minified --&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/smrlo/molecule/molecule.min.css&quot;&gt;</code></pre>
+          <div class="space-2"></div>
+        </div>
+      </div>
+      
+      <!-- The Grid -->
+      <div class="row">
+        <div class="col-12">
+          <h5>The Grid</h5>
+        </div>
+        <div class="col-12">
+          <p>Molecule includes a 12 columns responsive, flexbox based and mobile first grid system with a default max width of 1140px, wich you can easily change to a 960px or full page width. You can of course also have a mix of different grids widths on the same page.</p>
+        </div>
+        <!-- Demo 1 -->
+        <div class="col-5 col-s-5 col-m-5 col-l-5 col-x-5" id="demo-1"><div class="grid-demo"> </div></div>
+        <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4" id="demo-1"><div class="grid-demo"> </div></div>
+        <div class="col-2 col-s-2 col-m-2 col-l-2 col-x-2" id="demo-1"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-1"><div class="grid-demo"> </div></div>
+        <!-- Demo 2 -->
+        <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-3 col-s-3 col-m-3 col-l-3 col-x-3" id="demo-2"><div class="grid-demo"> </div></div>
+        <!-- Demo 3 -->
+        <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-4 col-s-4 col-m-4 col-l-4 col-x-4" id="demo-2"><div class="grid-demo"> </div></div>
+        <!-- Demo 4 -->
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        <div class="col-1 col-s-1 col-m-1 col-l-1 col-x-1" id="demo-2"><div class="grid-demo"> </div></div>
+        
+        <div class="col-12">
+          <div class="space-2"></div>
+          <p>For the standard 1140px grid use the following code:</p>
+          <pre><code>&lt;!-- default 12 columns - max width 1140px --&gt;<br/>&lt;div class=&quot;container&quot;&gt;<br/>  &lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col-5&quot;&gt;...&lt;/div&gt;<br/>    &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;<br/>    &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br/>    &lt;div class=&quot;col-1&quot;&gt;...&lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+          <div class="space-1"></div>
+          <p>For the 960px grid use the following code:</p>
+          <pre><code>&lt;!-- max width 960px --&gt;<br/>&lt;div class=&quot;container-960&quot;&gt;<br/>  &lt;div class=&quot;row&quot;&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+          <div class="space-1"></div>
+          <p>For the full page width grid use the following code:</p>
+          <pre><code>&lt;!-- full page width --&gt;<br/>&lt;div class=&quot;container-full&quot;&gt;<br/>  &lt;div class=&quot;row&quot;&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+          <div class="space-1"></div>
+          <p>To set up the columns you can use <code class="code-demo">col-[1-12]</code>, <code class="code-demo">col-s-[1-12]</code>, <code class="code-demo">col-m-[1-12]</code>, <code class="code-demo">col-l-[1-12]</code> and <code class="code-demo">col-x-[1-12]</code>. Below are the media queries and breakpoints in use:</p>
+          <pre><code>//&nbsp;Extra&nbsp;small&nbsp;devices&nbsp;(portrait&nbsp;phones,&nbsp;less&nbsp;than&nbsp;576px)&nbsp;--&gt;&nbsp;col-[1-12]<br/>//&nbsp;No&nbsp;media&nbsp;query&nbsp;-&nbsp;this&nbsp;is&nbsp;the&nbsp;default&nbsp;<br/><br/>//&nbsp;Small&nbsp;devices&nbsp;(landscape&nbsp;phones,&nbsp;576px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-s-[1-12]<br/>@media&nbsp;(min-width:&nbsp;576px)&nbsp;{&nbsp;...&nbsp;}<br/><br/>//&nbsp;Medium&nbsp;devices&nbsp;(tablets,&nbsp;768px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-m-[1-12]<br/>@media&nbsp;(min-width:&nbsp;768px)&nbsp;{&nbsp;...&nbsp;}<br/><br/>//&nbsp;Large&nbsp;devices&nbsp;(desktops,&nbsp;992px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-l-[1-12]<br/>@media&nbsp;(min-width:&nbsp;992px)&nbsp;{&nbsp;...&nbsp;}<br/><br/>//&nbsp;Extra&nbsp;large&nbsp;devices&nbsp;(large&nbsp;desktops,&nbsp;1200px&nbsp;and&nbsp;up)&nbsp;--&gt;&nbsp;col-x-[1-12]<br/>@media&nbsp;(min-width:&nbsp;1200px)&nbsp;{&nbsp;...&nbsp;}<br/></code></pre>
+          <div class="space-2"></div>
+        </div>
+      </div>
+      
       <!-- Typography -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="typography">Typography<a class="anchor" href="#typography">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p>Molecule includes some basic typography defaults for headings, text styles, paragraphs, blockquotes, lists and code elements. The base font size in Molecule is 1rem (16px) with a line height of 1.5 (24px).</p>
-        <p>Here is some more text to see typography in Molecule in action. Lorem ipsum dolor sit amet, ne eum dissentias dissentiet, electram incorrupte intellegebat ei his. Ne idque libris aliquam nec, facer inciderint vim id. Cetero facilisi tacimates ex sit, cum te cibo contentiones. Debet quodsi te vis, in pro etiam tacimates indoctum, nec fierent efficiantur no. Usu amet oblique te, ei zril melius feugait vel. Eos no adhuc reque zril, eos sanctus propriae at. Nam debet quaestio ad.</p>
-      </div>
-      <!-- Headings -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="headings">Headings<a class="anchor" href="#headings">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <div class="headings">
-        <h1>Heading1 ~ .h1</h1>
-        <h2>Heading2 ~ .h2</h2>
-        <h3>Heading3 ~ .h3</h3>
-        <h4>Heading4 ~ .h4</h4>
-        <h5>Heading5 ~ .h5</h5>
-        <h6>Heading6 ~ .h6</h6>
+      <div class="row">
+        <div class="col-12">
+          <h5>Typography</h5>
         </div>
-        <pre class="prettyprint"><code class="language-html">&lt;h1&gt;Heading1&lt;/h1&gt; &lt;span class=&quot;h1&quot;&gt;...&lt;/span&gt;<br/>&lt;h2&gt;Heading2&lt;/h2&gt; &lt;span class=&quot;h2&quot;&gt;...&lt;/span&gt;<br/>&lt;h3&gt;Heading3&lt;/h3&gt; &lt;span class=&quot;h3&quot;&gt;...&lt;/span&gt;<br/>&lt;h4&gt;Heading4&lt;/h4&gt; &lt;span class=&quot;h4&quot;&gt;...&lt;/span&gt;<br/>&lt;h5&gt;Heading5&lt;/h5&gt; &lt;span class=&quot;h5&quot;&gt;...&lt;/span&gt;<br/>&lt;h6&gt;Heading6&lt;/h6&gt; &lt;span class=&quot;h6&quot;&gt;...&lt;/span&gt;</code></pre>
-      </div>
-      <!-- Text styles -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="text-styles">Text styles<a class="anchor" href="#text-styles">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p class="typo-demo first"><span class="b">Bold</span></p>
-        <p class="typo-demo"><span class="i">Italic</span></p>
-        <p class="typo-demo"><span class="u">Underline</span></p>
-        <p class="typo-demo"><span class="s">Strike-through</span></p>
-        <p class="typo-demo"><span class="mark">Highlight</span></p>
-        <p class="typo-demo"><span class="n">No decoration</span></p>
-        <p class="typo-demo"><span class="cap">capitalize</span></p>
-        <p class="typo-demo last"><span class="upp">Uppercase</span></p>
-        <pre class="prettyprint"><code class="language-html">&lt;span class=&quot;b&quot;&gt;Bold&lt;/span&gt;<br/>&lt;span class=&quot;i&quot;&gt;Italic&lt;/span&gt;<br/>&lt;span class=&quot;u&quot;&gt;Underline&lt;/span&gt;<br/>&lt;span class=&quot;s&quot;&gt;Strike-through&lt;/span&gt;<br/>&lt;span class=&quot;mark&quot;&gt;Highlight&lt;/span&gt;<br/>&lt;span class=&quot;n&quot;&gt;None&lt;/span&gt;<br/>&lt;span class=&quot;cap&quot;&gt;capitalize&lt;/span&gt;<br/>&lt;span class=&quot;upp&quot;&gt;Uppercase&lt;/span&gt;</code></pre>
-      </div>
-      <!-- Blockquotes -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="blockquotes">Blockquotes<a class="anchor" href="#blockquotes">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <div class="blackquote-demo">
-        <blockquote>
-          The only source of knowledge is experience. —Albert Einstein
-        </blockquote>
+        <div class="col-12">
+          <p>Molecule includes some basic typography defaults for headings, text modifiers, paragraphs, blockquotes, lists and code elements. The base font size in Molecule is 1rem (usually 16px) with a line height of 1.5 (24px).</p>
+          <div class="space-1"></div>
         </div>
-        <pre class="prettyprint"><code class="language-html quote-demo">&lt;blockquote&gt;<br/>  The only source of knowledge is experience. &#x2015;Albert Einstein<br/>&lt;/blockquote&gt;</code></pre>
-      </div>
-      <!-- Lists -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="lists">Lists<a class="anchor" href="#lists">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <div class="lists-demo">
-        <ul>
-          <li>Unordered list item 1</li>
-          <li>Unordered list item 2</li>
-        </ul>
-        <ol>
-          <li>Ordered list item 1</li>
-          <li>Ordered list item 2</li>
-        </ol>
-        <dl>
-          <dt>Description list item 1</dt>
-          <dd>Description list item 1.1</dd>
-        </dl>
+        <!-- Typography / Headings -->
+        <div class="col-12">
+          <h6>Paragraphs</h6>
+          <p>Below is some text to see typography in Molecule in action:</p>
         </div>
-        <pre class="prettyprint"><code class="language-html">&lt;!-- Unordered list --&gt;<br/>&lt;ul&gt;<br/>  &lt;li&gt;Unordered list item 1&lt;/li&gt;<br/>  &lt;li&gt;Unordered list item 2&lt;/li&gt;<br/>&lt;/ul&gt;<br/><br/>&lt;!-- Ordered list --&gt;<br/>&lt;ol&gt;<br/>  &lt;li&gt;Ordered list item 1&lt;/li&gt;<br/>  &lt;li&gt;Ordered list item 2&lt;/li&gt;<br/>&lt;/ol&gt;<br/><br/>&lt;!-- Description list --&gt;<br/>&lt;dl&gt;<br/>  &lt;dt&gt;Description list item 1&lt;/dt&gt;<br/>  &lt;dd&gt;Description list item 1.1&lt;/dd&gt;<br/>&lt;/dl&gt;</code></pre>
+        <div class="col-12 col-s-6 col-m-6 col-l-6 col-x-6">
+          <p>Nobis graece per no, petentium adipiscing necessitatibus vis ei, constituto elaboraret nam id? Ex facete equidem pro, an everti mediocrem sit, sea eu vero nostro abhorreant! Sit quod populo alterum eu. Ius reque atqui epicurei ex? Ei vel omnesque omittantur. Sed vocibus invidunt assentior et, ad nostro nostrum ius, nec ei iusto vituperata?</p>
+          <p>Ne ipsum democritum eos, has ea veri referrentur. Te rebum doctus quo, ius et admodum vivendum efficiantur. Vitae fabellas mea no, id nec dignissim expetendis, eu eam quidam inimicus necessitatibus. Et mei unum vidisse vocibus, noster fabellas mel et. Et iriure vidisse deserunt mea, cu unum iusto quo! Eum cu veri dicant ubique, in pro congue utroque inermis. Pertinax atomorum erroribus et vis, eos eu erant tempor.</p>
+        </div>
+        <div class="col-12 col-s-6 col-m-6 col-l-6 col-x-6">
+          <p>Eum ut quidam feugiat, soluta vocibus urbanitas ne cum, everti indoctum eos cu. An cum tempor principes, no vis vero aliquid, vidit iudico nam te. Probo libris verterem ex cum, graeco accusam eos ut? Ei consul graece periculis mel, sea novum simul in! Graece tibique laboramus nec ea. Te pri altera gloriatur, has ea meis labitur consequuntur, at sed oporteat repudiandae. Ei sed magna utamur discere, delicata molestiae eum at.</p>
+          <p>Ex nibh error homero est, eu congue civibus qui, soleat graece convenire no sit! Homero cotidieque efficiantur vis ex, ea fabulas offendit vix, ei aliquid nominavi complectitur eos. Usu cu lorem cetero voluptua. Ei est laudem suavitate. Cum at oratio quidam constituam? Alienum hendrerit in qui.</p>
+          <div class="space-2"></div>
+        </div>
+        <!-- Typography / Headings -->
+        <div class="col-12">
+          <h6>Headings</h6>
+          <p>Headings are defined with the <code class="code-demo">&lt;h1&gt;</code> to <code class="code-demo">&lt;h6&gt;</code> tags, and you can use any standard HTML heading. You can also define a heading by attaching the html classes <code class="code-demo">&#46;h1</code> through <code class="code-demo">&#46;h6</code> to the related HTML element.</p>
+        </div>
+        <div class="col-12">
+          <h1>H1 heading</h1>
+          <h2>H2 heading</h2>
+          <h3>H3 heading</h3>
+          <h4>H4 heading</h4>
+          <h5>H5 heading</h5>
+          <h6>H6 heading</h6>
+          <div class="space-1"></div>
+        </div>
+        <div class="col-12">
+          <pre><code>&lt;h1&gt;Heading1&lt;/h1&gt; &lt;span class=&quot;h1&quot;&gt;...&lt;/span&gt;<br/>&lt;h2&gt;Heading2&lt;/h2&gt; &lt;span class=&quot;h2&quot;&gt;...&lt;/span&gt;<br/>&lt;h3&gt;Heading3&lt;/h3&gt; &lt;span class=&quot;h3&quot;&gt;...&lt;/span&gt;<br/>&lt;h4&gt;Heading4&lt;/h4&gt; &lt;span class=&quot;h4&quot;&gt;...&lt;/span&gt;<br/>&lt;h5&gt;Heading5&lt;/h5&gt; &lt;span class=&quot;h5&quot;&gt;...&lt;/span&gt;<br/>&lt;h6&gt;Heading6&lt;/h6&gt; &lt;span class=&quot;h6&quot;&gt;...&lt;/span&gt;</code></pre>
+          <div class="space-2"></div>
+        </div>
+        <!-- Typography / Text modifiers -->
+        <div class="col-12">
+          <h6>Text modifiers</h6>
+          <p>Styling for common inline HTML5 elements.</p>
+        </div>
+        <div class="col-12 col-s-6 col-m-6 col-l-6 col-x-6">
+          <p><i>Italic</i>&nbsp;&nbsp;<code class="code-demo">&lt;i&gt;</code>&nbsp;&nbsp;<code class="code-demo">.i</code></p>
+          <p><strong>Bold</strong>&nbsp;&nbsp;<code class="code-demo">&lt;strong&gt;</code>&nbsp;&nbsp;<code class="code-demo">&lt;b&gt;</code>&nbsp;&nbsp;<code class="code-demo">.b</code></p>
+          <p><u>Underline</u>&nbsp;&nbsp;<code class="code-demo">&lt;u&gt;</code>&nbsp;&nbsp;<code class="code-demo">.u</code></p>
+          <p><s>Strikethrough</s>&nbsp;&nbsp;<code class="code-demo">&lt;s&gt;</code>&nbsp;&nbsp;<code class="code-demo">.s</code></p>
+          <p><mark>Highlighted</mark>&nbsp;&nbsp;<code class="code-demo">&lt;mark&gt;</code>&nbsp;&nbsp;<code class="code-demo">.mark</code></p>
+          <p><kbd>Ctrl + C</kbd>&nbsp;&nbsp;<code class="code-demo">&lt;kbd&gt;</code>&nbsp;&nbsp;<code class="code-demo">.kbd</code></p>
+          <p><em>Emphasis</em>&nbsp;&nbsp;<code class="code-demo">&lt;em&gt;</code></p>
+          <p><abbr title="Abbreviation">Abbr.</abbr>&nbsp;&nbsp;<code class="code-demo">&lt;abbr&gt;</code></p>
+          <p><cite>Citation</cite>&nbsp;&nbsp;<code class="code-demo">&lt;cite&gt;</code></p>
+          <p><ins>Inserted</ins>&nbsp;&nbsp;<code class="code-demo">&lt;ins&gt;</code></p>
+          <p><span class="label">Label</span>&nbsp;&nbsp;<code class="code-demo">.label</code></p>
+        </div>
+        <div class="col-12 col-s-6 col-m-6 col-l-6 col-x-6">
+          <p><del>Deleted</del>&nbsp;&nbsp;<code class="code-demo">&lt;del&gt;</code></p>
+          <p><code>code</code>&nbsp;&nbsp;<code class="code-demo">&lt;code&gt;</code></p>
+          <p><samp>Sample code</samp>&nbsp;&nbsp;<code class="code-demo">&lt;samp&gt;</code></p>
+          <p><var>z</var> = <var>x</var> + <var>y</var>&nbsp;&nbsp;<code class="code-demo">&lt;var&gt;</code></p>
+          <p>This is<sup>superscript</sup>&nbsp;&nbsp;<code class="code-demo">&lt;sup&gt;</code></p>
+          <p>This is<sub>subscript</sub>&nbsp;&nbsp;<code class="code-demo">&lt;sub&gt;</code></p>
+          <p><span class="ca">capitalize</span>&nbsp;&nbsp;<code class="code-demo">.ca</code></p>
+          <p><span class="uc">uppercase</span>&nbsp;&nbsp;<code class="code-demo">.uc</code></p>
+          <p><span class="lc">LOWERCASE</span>&nbsp;&nbsp;<code class="code-demo">.lc</code></p>
+          <p><span class="no">no decoration</span>&nbsp;&nbsp;<code class="code-demo">.no</code></p>
+          <p>&nbsp;&nbsp;</p>
+          <div class="space-2"></div>
+        </div>
+        <!-- Typography / Blockquotes -->
+        <div class="col-12">
+          <h6>Blockquotes</h6>
+          <p>Blockquotes are defined with the <code class="code-demo">&lt;blockquote&gt;</code> tags, and are used to indicate that the enclosed text is quoted from another source. Additionally, you can use the <code class="code-demo">&lt;cite&gt;</code> tag to indicate the source of the quotation.</p>
+        </div>
+        <div class="col-12">
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At iam decimum annum in spelunca iacet. Terram, mihi crede, ea lanx et maria deprimet. Proclivi currit oratio. Tecum optime, deinde etiam cum mediocri amico. Hi curatione adhibita levantur in dies, valet alter plus cotidie, alter videt.</p>
+            <cite>- Lorem Ipsum</cite>
+          </blockquote>
+          <div class="space-1"></div>
+        </div>
+        <div class="col-12">
+          <pre><code>&lt;blockquote&gt;<br/>  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. At iam decimum annum in spelunca iacet. Terram, mihi crede, ea lanx et maria deprimet. Proclivi currit oratio. Tecum optime, deinde etiam cum mediocri amico. Hi curatione adhibita levantur in dies, valet alter plus cotidie, alter videt.&lt;/p&gt;<br/>  &lt;cite&gt;- Lorem Ipsum&lt;/p&gt;<br/>&lt;/blockquote&gt;</code></pre>
+          <div class="space-2"></div>
+        </div>
+        <!-- Typography / Lists -->
+        <div class="col-12">
+          <h6>Lists</h6>
+          <p>An unordered list starts with the <code class="code-demo">&lt;ul&gt;</code> tag, while an ordered list starts with the <code class="code-demo">&lt;ol&gt;</code> tag. Each list item starts with the <code class="code-demo">&lt;li&gt;</code> tag. Description lists are defined with the <code class="code-demo">&lt;dl&gt;</code> tag, and use the <code class="code-demo">&lt;dt&gt;</code> tag to define the term and the <code class="code-demo">&lt;dd&gt;</code> tag to describe each term. If you want to have an unstyled list, simply append the class <code class="code-demo">.unstyled</code> to the list tag.</p>
+        </div>
+        <div class="col-3">
+          <!-- unordered list -->
+          <p>Unordered lists:</p>
+          <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+              <ul>
+                <li>list item 2.1</li>
+                <li>list item 2.2</li>
+                <li>list item 2.3</li>
+              </ul>
+            <li>list item 3</li>
+              <ul>
+                <li>list item 3.1</li>
+              </ul>
+            <li>list item 4</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <!-- ordered list -->
+          <p>Ordered lists:</p>
+          <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+              <ol>
+                <li>list item 3.1</li>
+                <li>list item 3.2</li>
+              </ol>
+            <li>list item 4</li>
+            <li>list item 5</li>
+            <li>list item 6</li>
+          </ol>
+        </div>
+        <div class="col-3">
+          <!-- description list -->
+          <p>Description lists:</p>
+          <dl>
+            <dt>description list term</dt>
+            <dd>description list 1</dd>
+            <dd>description list 2</dd>
+          </dl>
+          <dl>
+            <dt>description list term</dt>
+            <dd>description list 1</dd>
+            <dd>description list 2</dd>
+            <dd>description list 3</dd>
+          </dl>
+        </div>
+        <div class="col-3">
+          <!-- unstyled list -->
+          <p>Unstyled lists:</p>
+          <ul class="unstyled">
+            <li>list item 1 </li>
+            <li>list item 2</li>
+              <ul>
+                <li>list item 2.1</li>
+                <li>list item 2.2</li>
+                <li>list item 2.3</li>
+              </ul>
+            <li>list item 3</li>
+              <ul>
+                <li>list item 3.1</li>
+              </ul>
+            <li>list item 4</li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <div class="space-1"></div>
+          <pre><code>&lt;!-- Unordered lists --&gt;<br/>&lt;ul&gt;<br/>  &lt;li&gt;list item 1&lt;/li&gt;<br/>  &lt;li&gt;list item 2&lt;/li&gt;<br/>&lt;/ul&gt;<br/><br/>&lt;!-- Ordered lists --&gt;<br/>&lt;ol&gt;<br/>  &lt;li&gt;list item 1&lt;/li&gt;<br/>  &lt;li&gt;list item 2&lt;/li&gt;<br/>&lt;/ol&gt;<br/><br/>&lt;!-- Description list --&gt;<br/>&lt;dl&gt;<br/>  &lt;dt&gt;description list term&lt;/dt&gt;<br/>  &lt;dd&gt;description list item&lt;/dd&gt;<br/>&lt;/dl&gt;<br/><br/>&lt;!-- Unstyled lists --&gt;<br/>&lt;ul class="unstyled"&gt;<br/>  &lt;li&gt;description list term&lt;/li&gt;<br/>  &lt;li&gt;description list item&lt;/li&gt;<br/>&lt;/ul&gt;</code></pre>
+        <div class="space-2"></div>
+        </div>
       </div>
+      
       <!-- Code -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="code">Code<a class="anchor" href="#code">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p>The &lt;code&gt; tag can be used to show an inline piece of computer code and in Molecule it appears like <code>this</code>. If you want to display a multiline block of code, then simply use &lt;code&gt; inside the &lt;pre&gt; tag and it will look as follow:</p>
-        <pre class="prettyprint"><code class="language-css">&lt;!-- This is a multiline block of code --&gt;<br/>.sample {<br/>  text-align: left;<br/>}</code></pre>
-        <pre class="prettyprint"><code class="language-html">&lt;!-- Remember that whitespaces, breaks and indentations are preserved in a &lt;pre&gt; --&gt;
-&lt;pre&gt;&lt;code&gt;.sample {
-  text-align: left;
-}&lt;/code&gt;&lt;/pre&gt;</code></pre>
-      </div>
-
-      <!-- Elements -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="elements">Elements<a class="anchor" href="#elements">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <p>Molecule includes also some basic styling for tables and forms elements.</p>
-      </div>
-      <!-- Table -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="tables">Tables<a class="anchor" href="#tables">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <div class="table-demo">
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Sex</th>
-              <th>Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Steve</td>
-              <td>51</td>
-              <td>Male</td>
-              <td>Berlin</td>
-            </tr>
-            <tr>
-              <td>Lisa</td>
-              <td>27</td>
-              <td>Female</td>
-              <td>Brisbane</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="row">
+        <div class="col-12">
+          <h5>Code Block</h5>
+          <p>You can wrap inline snippets of code using the <code class="code-demo">&lt;code&gt;</code> tag. Be sure to escape HTML angle brackets. To create a code block with one or multiple lines of code, you can use the <code class="code-demo">&lt;code&gt;</code> tag inside the <code class="code-demo">&lt;pre&gt;</code> tag. Once again, be sure to escape any angle brackets in the code for proper rendering.</p>
         </div>
-        <pre class="prettyprint"><code class="language-html">&lt;table&gt;<br/>  &lt;thead&gt;<br/>    &lt;tr&gt;<br/>      &lt;th&gt;Name&lt;/th&gt;<br/>      &lt;th&gt;Age&lt;/th&gt;<br/>      &lt;th&gt;Sex&lt;/th&gt;<br/>      &lt;th&gt;Location&lt;/th&gt;<br/>    &lt;/tr&gt;<br/>  &lt;/thead&gt;<br/>  &lt;tbody&gt;<br/>    &lt;tr&gt;<br/>      &lt;td&gt;Steve&lt;/td&gt;<br/>      &lt;td&gt;51&lt;/td&gt;<br/>      &lt;td&gt;Male&lt;/td&gt;<br/>      &lt;td&gt;Berlin&lt;/td&gt;<br/>    &lt;/tr&gt;<br/>    &lt;tr&gt;<br/>      &lt;td&gt;Lisa&lt;/td&gt;<br/>      &lt;td&gt;27&lt;/td&gt;<br/>      &lt;td&gt;Female&lt;/td&gt;<br/>      &lt;td&gt;Brisbane&lt;/td&gt;<br/>    &lt;/tr&gt;<br/>  &lt;/tbody&gt;<br/>&lt;/table&gt;</code></pre>
-      </div>
-      <!-- Forms -->
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <h3 class="h5 subtitle" id="forms">Forms<a class="anchor" href="#forms">#</a></h3>
-      </div>
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-        <div class="form-demo">
-        <form>
-          <label>First name:</label>
-          <input type="text">
-          <label>Last name:</label>
-          <input type="text">
-          <label>Write:</label>
-          <textarea placeholder="Write here..."></textarea>
-          <label>Lucky number:</label>
-          <select>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3+">3+</option>
-          </select>
-          <input type="checkbox">
-          <label class="label-inline">Checkbox</label>
-          <input type="radio">
-          <label class="label-inline">Radio</label>
-          <button type="submit">Submit</button>
-        </form>
+        <div class="col-12">
+          <pre><code>.sample {<br/>  text-align: left;<br/>}</code></pre>
         </div>
-        <pre class="prettyprint"><code class="language-html">&lt;form&gt;<br/>  &lt;label&gt;First name:&lt;/label&gt;<br/>  &lt;input type=&quot;text&quot;&gt;<br/>  &lt;label&gt;Last name:&lt;/label&gt;<br/>  &lt;input type=&quot;text&quot;&gt;<br/>  &lt;label&gt;Write:&lt;/label&gt;<br/>  &lt;textarea placeholder=&quot;Write here...&quot;&gt;&lt;/textarea&gt;<br/>  &lt;label&gt;Lucky number:&lt;/label&gt;<br/>  &lt;select&gt;<br/>    &lt;option value=&quot;0&quot;&gt;0&lt;/option&gt;<br/>    &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;<br/>    &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;<br/>    &lt;option value=&quot;3+&quot;&gt;3+&lt;/option&gt;<br/>  &lt;/select&gt;<br/>  &lt;input type=&quot;checkbox&quot;&gt;<br/>  &lt;label&gt;Checkbox&lt;/label&gt;<br/>  &lt;input type=&quot;radio&quot;&gt;<br/>  &lt;label&gt;Radio&lt;/label&gt;<br/>  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br/>&lt;/form&gt;</code></pre>
-      </div>
-    </div> <!-- Content -->
-
-  </div> <!-- Container main -->
-
-
-  <div class="container-full"> <!-- Container footer -->
-
-    <div class="row" id="footer-box">
-      <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-
-
-      <div class="row" id="footer">
-        <div class="col-12 col-s-12 col-m-12 col-l-12 col-x-12">
-          <p>
-            <a href="#gettingstarted">Get Started</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/smrlo/molecule">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;Version 1.0.0
-          </p>
-          <p>
-            Designed and built with &#10084; and &#9749;&nbsp;. Licensed under the <a href="https://github.com/smrlo/molecule/blob/master/LICENSE" target="_blank">MIT License</a>.
-          </p>
+        <div class="col-12">
+          <pre><code>&lt;pre&gt;&lt;code&gt;.sample {<br/>  text-align: left;<br/>}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+          <div class="space-2"></div>
         </div>
       </div>
-
-
+      
+      <!-- Buttons -->
+      <div class="row">
+        <div class="col-12">
+          <h5>Buttons</h5>
+          <p>You can define buttons using the <code class="code-demo">&lt;button&gt;</code> tag. Alternatively, you can also use the <code class="code-demo">&lt;input&gt;</code> tag, or you can append the <code class="code-demo">.button</code> class to any <code class="code-demo">&lt;a&gt;</code> tag. If you want to have an outline button, simply use the <code class="code-demo">.button-outline</code> class.</p>
+        </div>
+        <div class="col-12">
+          <a href="" class="button">Primary Button</a> <a href="" class="button-outline">Outline Button</a>
+        </div>
+        <div class="col-12">
+          <div class="space-1"></div>
+          <pre><code>&lt;!-- Primary Button --&gt;<br/>&lt;a href=&quot;...&quot; class=&quot;button&quot;&gt;Primary Button&lt;/a&gt;<br/><br/>&lt;!-- Outline Button --&gt;<br/>&lt;a href=&quot;...&quot; class=&quot;button-outline&quot;&gt;Outline Button&lt;/a&gt;</code></pre>
+          <div class="space-2"></div>
+        </div>
       </div>
-    </div>
-
-  </div> <!-- Container footer -->
-
-<!-- Website utilities -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js?lang=css&amp:lang=html&amp;skin=none"></script>
-<!-- GA -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-104064938-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</body>
-
+      
+      <!-- Footer -->
+      <div class="row">
+        <div class="col-12">
+          <div class="space-2"></div>
+          <p>Molecule v2.0</p>
+          <p>Designed and built with ❤ - Licensed under the <a href="">MIT License</a>.</p>
+          <div class="space-2"></div>
+        </div>
+      </div>
+      
+    </div><!-- Container end -->
+      
+  </body>
 </html>
