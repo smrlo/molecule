@@ -1,4 +1,7 @@
 # Molecule
+![GitHub release](https://img.shields.io/github/release/smrlo/molecule.svg)
+![CSS gzip size](https://img.badgesize.io/smrlo/molecule/master/molecule.min.css?compression=gzip&label=CSS+gzip+size&style=flat)
+
 Molecule is a lightweight, responsive and mobile-first CSS framework, which provides a very flexible solution for an easy to set up and fast development.
 
 Molecules includes 3 responsive and mobile-first flexbox grids (full-width, 1140px and 960px), basic typography, text utilities and some other basic layout elements.
