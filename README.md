@@ -2,11 +2,12 @@
 ![GitHub release](https://img.shields.io/github/release/smrlo/molecule.svg)
 ![CSS gzip size](https://img.badgesize.io/smrlo/molecule/master/molecule.min.css?compression=gzip&label=CSS+gzip+size&style=flat)
 
-Molecule is a lightweight, responsive and mobile-first CSS framework based on Flexbox, which provides a very flexible solution for an easy to set up and fast development.
+Molecule is a lightweight, responsive and mobile-first CSS framework which provides a very flexible solution for an easy to set up and fast development.
 
-Molecules includes 3 responsive and mobile-first flexbox grids (full-width, 1140px and 960px), basic typography, text utilities and some other basic layout elements.
-
-Read more on how to get started with Molecule at https://smrlo.github.io/molecule
+- Lightweight (~2KB gzipped)
+- Easy to set up, flexbox based and mobile-first
+- Responsive and flexible grid system: 12 columns with 1140px, 960px or Full-page width grid
+- Basic typography, text utilities and some other basic layout elements
 
 
 ## Getting Started
@@ -21,13 +22,66 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 ```
 
 
-## Features
-- Easy to set up
-- Lightweight CSS framework
-- Flexbox based grid
-- Mobile-first approach
-- Responsive and flexible grid system: 12 columns, with 1140px, 960px or Full-page width grids
-- Basic styling for typography and some other elements
+## The Grid
+Molecule includes a 12 columns responsive, flexbox based and mobile first grid system with a default max width of 1140px, wich you can easily change to a 960px or full page width. You can of course also have a mix of different grids widths on the same page.
+
+For the standard 1140px grid use the following code:
+```html
+<!-- default 12 columns - max width 1140px -->
+<div class="container">
+  <div class="row">
+    <div class="col-5">...</div>
+    <div class="col-4">...</div>
+    <div class="col-2">...</div>
+    <div class="col-1">...</div>
+  </div>
+</div>
+```
+
+For the 960px grid use the following code:
+```html
+<!-- max width 960px -->
+<div class="container-960">
+  <div class="row">
+    ...
+  </div>
+</div>
+```
+
+For the full page width grid use the following code:
+```html
+<!-- full page width -->
+<div class="container-full">
+  <div class="row">
+    ...
+  </div>
+</div>
+```
+
+To set up the columns use `col-[1-12]`, `col-s-[1-12]`, `col-m-[1-12]`, `col-l-[1-12]` and `col-x-[1-12]`.
+Below are the media queries and breakpoints in use:
+```html
+// Extra small devices (portrait phones, less than 576px) --> col-[1-12]
+// No media query - this is the default 
+
+// Small devices (landscape phones, 576px and up) --> col-s-[1-12]
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up) --> col-m-[1-12]
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up) --> col-l-[1-12]
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up) --> col-x-[1-12]
+@media (min-width: 1200px) { ... }
+```
+
+
+## Typography
+Molecule includes some basic typography defaults for headings, text modifiers, paragraphs, blockquotes, lists and code elements. The base font size in Molecule is 1rem (usually 16px) with a line height of 1.5 (24px).
+
+Read more on how to get started and what else you can do with Molecule [here](https://smrlo.github.io/molecule).
 
 
 ## Contributing
