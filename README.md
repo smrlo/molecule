@@ -57,7 +57,7 @@ For the full page width grid use the following code:
 </div>
 ```
 
-To set up the columns use `col-*`, `col-s-*`, `col-m-*`, `col-l-*` and `col-x-*`. Note: `*` must be a number between 1 and 12. Use `-none` to hide the column.
+To set up the columns use `col-*`, `col-s-*`, `col-m-*`, `col-l-*` and `col-x-*`. Note: `*` must be a number between 1 and 12. Use `none` to hide the column (e.g. `col-s-none`).
 | Class        | Applies      | CSS Media Query            | Example      |
 | ------------ | ------------ | -------------------------- | ------------ |
 | col-*        | < 576px      | Default                    | col-12       |
