@@ -19,7 +19,7 @@ To install Molecule, simply add the `molecule.min.css` file in your website &lt;
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 
 <!-- Molecule CSS minified -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/smrlo/molecule@2.1/molecule.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/smrlo/molecule/molecule.min.css">
 ```
 
 
